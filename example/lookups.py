@@ -71,7 +71,7 @@ class SongLookup(LookupChannel):
 
 class ClicheLookup(LookupChannel):
 
-    """ an autocomplete lookup does not need to search models
+    """ an autocomplete lookup does not need to search_old models
         though the words here could also be stored in a model and
         searched as in the lookups above
         """

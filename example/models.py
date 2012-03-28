@@ -17,7 +17,7 @@ class Group(models.Model):
     """ a music group """
 
     name = models.CharField(max_length=200,unique=True)
-    members = models.ManyToManyField(Person,blank=True,help_text="Enter text to search for and add each member of the group.")
+    members = models.ManyToManyField(Person,blank=True,help_text="Enter text to search_old for and add each member of the group.")
     url = models.URLField(blank=True, verify_exists=False)
 
     def __unicode__(self):

@@ -25,7 +25,7 @@ setup(name='django-ajax-selects',
     long_description = """\
 Enables editing of `ForeignKey`, `ManyToManyField` and `CharField` using jQuery UI AutoComplete.
 
-1. The user types a search term into the text field
+1. The user types a search_old term into the text field
 2. An ajax request is sent to the server. 
 3. The dropdown menu is populated with results. 
 4. User selects by clicking or using arrow keys

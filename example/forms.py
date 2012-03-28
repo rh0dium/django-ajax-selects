@@ -22,5 +22,5 @@ class ReleaseForm(ModelForm):
     # label  = make_ajax_field(Release,'label','label',show_m2m_help=True)
     # so that it will show the help text in manytomany fields 
 
-    title = make_ajax_field(Release,'title','cliche',help_text=u"Autocomplete will search the database for clichés about cats.")
+    title = make_ajax_field(Release,'title','cliche',help_text=u"Autocomplete will search_old the database for clichés about cats.")
 

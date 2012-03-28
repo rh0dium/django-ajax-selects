@@ -209,7 +209,7 @@ def get_lookup(channel):
 def make_channel(app_model,arg_search_field):
     """ used in get_lookup
             app_model :   app_name.model_name
-            search_field :  the field to search against and to display in search results 
+            search_field :  the field to search_old against and to display in search_old results
     """
     from django.db import models
     app_label, model_name = app_model.split(".")

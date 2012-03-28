@@ -21,7 +21,7 @@ INSTALLED_APPS = (
 # DEFINE THE SEARCH CHANNELS:
 
 AJAX_LOOKUP_CHANNELS = {
-    # simplest way, automatically construct a search channel by passing a dictionary
+    # simplest way, automatically construct a search_old channel by passing a dictionary
     'label'  : {'model':'example.label', 'search_field':'name'},
     
     # Custom channels are specified with a tuple

@@ -87,7 +87,7 @@ class AutoCompleteSelectField(forms.fields.CharField):
         widget = kwargs.get("widget", False)
         
         if not widget or not isinstance(widget, AutoCompleteSelectWidget):
-            kwargs["widget"] = AutoCompleteSelectWidget(channel=channel,help_text=kwargs.get('help_text') or _('Enter text to search.'))
+            kwargs["widget"] = AutoCompleteSelectWidget(channel=channel,help_text=kwargs.get('help_text',_('Enter text to search.')))
         super(AutoCompleteSelectField, self).__init__(max_length=255,*args, **kwargs)
 
     def clean(self, value):
@@ -237,7 +237,7 @@ class AutoCompleteSelectMultipleField(forms.fields.CharField):
 
 class AutoCompleteWidget(forms.TextInput):
     """
-    Widget to select a search result and enter the result as raw text in the text input field.
+    Widget to select a search_old result and enter the result as raw text in the text input field.
     the user may also simply enter text and ignore any auto complete suggestions.
     """
     channel = None
